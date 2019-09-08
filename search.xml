@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[测试文章]]></title>
+    <title><![CDATA[Jekins入门介绍]]></title>
     <url>%2F2019%2F09%2F08%2F%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"><![CDATA[这是测试的文章访问http://localhost:4000]]></content>
+    <content type="text"><![CDATA[step 1 安装Jenkins是一个独立的开源自动化服务器，可用于自动化各种任务，如构建，测试和部署软件。Jenkins可以通过本机系统包Docker安装，甚至可以通过安装Java Runtime Environment的任何机器独立运行。 Windows下的安装： 下载最新的软件包 打开包装并按照说明进行操作 step 2 初始化配置安装完成后，输入http://localhost:8080/jenkins访问Jenkins ，首次进入需要初始化页面，比较慢初始化完成，根据提示的路径找到密码输入，选择建议插件安装。等待一段时间，创建第一个管理员用户：进行实例配置：成功后进入jenkins首页，如下图： 点击左上角的系统管理进入Jenkins的基本设置，搜索“Publish over SSH”插件，未安装则进行安装：点击系统设置，添加全局属性键：LANG值：zh_CH.UTF-8 配置Publish over SSH，jenkins机器和项目机器需要配置双机信任（自行google），在项目机上生成证书： 1ssh-keygen -t rsa 配置远程服务器：]]></content>
       <categories>
-        <category>后端</category>
+        <category>工具</category>
       </categories>
       <tags>
-        <tag>Java</tag>
+        <tag>自动化</tag>
       </tags>
   </entry>
 </search>

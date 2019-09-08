@@ -55,18 +55,27 @@
   };
 </script>
 
-  <meta name="description" content="这是测试的文章访问http://localhost:4000">
-<meta name="keywords" content="Java">
+  <meta name="description" content="step 1 安装Jenkins是一个独立的开源自动化服务器，可用于自动化各种任务，如构建，测试和部署软件。Jenkins可以通过本机系统包Docker安装，甚至可以通过安装Java Runtime Environment的任何机器独立运行。">
+<meta name="keywords" content="自动化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试文章">
+<meta property="og:title" content="Jekins入门介绍">
 <meta property="og:url" content="http://mcedo.github.io/2019/09/08/测试文章/index.html">
 <meta property="og:site_name" content="cedo的博客">
-<meta property="og:description" content="这是测试的文章访问http://localhost:4000">
+<meta property="og:description" content="step 1 安装Jenkins是一个独立的开源自动化服务器，可用于自动化各种任务，如构建，测试和部署软件。Jenkins可以通过本机系统包Docker安装，甚至可以通过安装Java Runtime Environment的任何机器独立运行。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-08T07:04:55.737Z">
+<meta property="og:image" content="http://mcedo.github.io/images/post/jenkinsInit.png">
+<meta property="og:image" content="http://mcedo.github.io/images/post/jenkinscreate.png">
+<meta property="og:image" content="http://mcedo.github.io/images/post/jenkinsconf.png">
+<meta property="og:image" content="http://mcedo.github.io/images/post/jenkinshome.png">
+<meta property="og:image" content="http://mcedo.github.io/images/post/jenkinspluins.png">
+<meta property="og:image" content="http://mcedo.github.io/images/post/jenkinskey.png">
+<meta property="og:image" content="http://mcedo.github.io/images/post/jenkinsssh.png">
+<meta property="og:image" content="http://mcedo.github.io/images/post/jenkinssshConf.png">
+<meta property="og:updated_time" content="2019-09-08T12:14:20.624Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="测试文章">
-<meta name="twitter:description" content="这是测试的文章访问http://localhost:4000">
+<meta name="twitter:title" content="Jekins入门介绍">
+<meta name="twitter:description" content="step 1 安装Jenkins是一个独立的开源自动化服务器，可用于自动化各种任务，如构建，测试和部署软件。Jenkins可以通过本机系统包Docker安装，甚至可以通过安装Java Runtime Environment的任何机器独立运行。">
+<meta name="twitter:image" content="http://mcedo.github.io/images/post/jenkinsInit.png">
   <link rel="canonical" href="http://mcedo.github.io/2019/09/08/测试文章/">
 
 
@@ -81,7 +90,7 @@
   };
 </script>
 
-  <title>测试文章 | cedo的博客</title>
+  <title>Jekins入门介绍 | cedo的博客</title>
   
 
 
@@ -241,7 +250,7 @@
       <meta itemprop="name" content="cedo的博客">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">测试文章
+        <h1 class="post-title" itemprop="name headline">Jekins入门介绍
 
           
         </h1>
@@ -257,7 +266,7 @@
                 
               
 
-              <time title="创建时间：2019-09-08 01:47:13 / 修改时间：15:04:55" itemprop="dateCreated datePublished" datetime="2019-09-08T01:47:13+08:00">2019-09-08</time>
+              <time title="创建时间：2019-09-08 01:47:13 / 修改时间：20:14:20" itemprop="dateCreated datePublished" datetime="2019-09-08T01:47:13+08:00">2019-09-08</time>
             </span>
           
             
@@ -270,7 +279,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/后端/" itemprop="url" rel="index"><span itemprop="name">后端</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/工具/" itemprop="url" rel="index"><span itemprop="name">工具</span></a></span>
 
                 
                 
@@ -289,8 +298,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>这是测试的文章<br>访问<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
+        <h2 id="step-1-安装"><a href="#step-1-安装" class="headerlink" title="step 1 安装"></a>step 1 安装</h2><p>Jenkins是一个独立的开源自动化服务器，可用于自动化各种任务，如构建，测试和部署软件。Jenkins可以通过本机系统包Docker安装，甚至可以通过安装Java Runtime Environment的任何机器独立运行。</p>
 <a id="more"></a>
+<ul>
+<li>Windows下的安装：<ul>
+<li><a href="http://mirrors.jenkins.io/windows/latest" target="_blank" rel="noopener">下载最新的软件包</a></li>
+<li>打开包装并按照说明进行操作</li>
+</ul>
+</li>
+</ul>
+<h2 id="step-2-初始化配置"><a href="#step-2-初始化配置" class="headerlink" title="step 2 初始化配置"></a>step 2 初始化配置</h2><p>安装完成后，输入<a href="http://localhost:8080/jenkins访问Jenkins" target="_blank" rel="noopener">http://localhost:8080/jenkins访问Jenkins</a> ，首次进入需要初始化页面，比较慢<br><img src="/images/post/jenkinsInit.png" alt="init"><br>初始化完成，根据提示的路径找到密码输入，选择建议插件安装。等待一段时间，创建第一个管理员用户：<br><img src="/images/post/jenkinscreate.png" alt="create"><br>进行实例配置：<br><img src="/images/post/jenkinsconf.png" alt="create"><br>成功后进入jenkins首页，如下图：<br><img src="/images/post/jenkinshome.png" alt="create"></p>
+<p>点击左上角的系统管理进入Jenkins的基本设置，搜索“Publish over SSH”插件，未安装则进行安装：<br><img src="/images/post/jenkinspluins.png" alt="pluins"><br>点击系统设置，添加全局属性<br>键：LANG<br>值：zh_CH.UTF-8<br><img src="/images/post/jenkinskey.png" alt="key"></p>
+<p>配置Publish over SSH，jenkins机器和项目机器需要配置双机信任（自行google），在项目机上生成证书：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/post/jenkinsssh.png" alt><br>配置远程服务器：<br><img src="/images/post/jenkinssshConf.png" alt></p>
 
     </div>
 
@@ -306,7 +328,7 @@
           
           <div class="post-tags">
             
-              <a href="/tags/Java/" rel="tag"># Java</a>
+              <a href="/tags/自动化/" rel="tag"># 自动化</a>
             
           </div>
         
@@ -357,6 +379,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#step-1-安装"><span class="nav-number">1.</span> <span class="nav-text">step 1 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-2-初始化配置"><span class="nav-number">2.</span> <span class="nav-text">step 2 初始化配置</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
